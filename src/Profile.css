@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans';
+}
+
+body {
+  background-color: #fffff0;
+}
+
+.image-container {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  background-color: #90B274;
+  position: relative;
+}
+
+.leaf-image {
+  background-image: url("/src/assets/unsplashLeaves.png");
+  width: 100vw;
+  height: 40vh;
+  background-position: center;
+  background-size: 2000px;
+  transform: scaleX(-1);
+  opacity: 100%;
+}
+
+.profile-back-btn {
+  position: absolute;
+  z-index: 5;
+  margin-left: 5vw;
+  margin-top: 6vh;
+  font-size: 300%;
+  font-weight: 600;
+  color: white;
+}
+
+.left-box {
+  position: absolute;
+  margin-top: 30vh;
+  margin-left: 6vw;
+  min-width: 32%;
+  height: 60vh;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.right-box {
+  position: absolute;
+  right: 0;
+  margin-top: 30vh;
+  margin-right: 4vw;
+  min-width: 50%;
+  height: 60vh;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.profile-picture {
+  position: absolute;
+  margin-top: 19vh;
+  margin-left: 14.3vw;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  border: 2px solid #033324;
+  z-index: 2;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-placeholder {
+  background-image: url("/src/assets/user.png");
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  background-size: 120%; /* Adjust the percentage to change the size */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.data-box-left {
+  margin-top: 27vh;
+}
+
+.change-profile-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  height: 20%;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.data-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4% 6%;
+}
+
+.data-content-address {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 4% 6%;
+}
+
+.left-text {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.right-text {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.down-text {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: -5px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-left: 3vw;
+  margin-top: 2vw;
+}
+
+.data-box-right {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+input, label {
+  display: block;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 3vh;
+}
+
+input[type=text] {
+  font-size: 1.3em;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 4vh;
+  box-sizing: border-box;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  background-color: #DADADA;
+  height: 5vh;
+}
+
+.data-content-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+
+.update-profile-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 566px) {
+  .image-container {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    background-color: #90B274;
+    position: relative;
+  }
+
+  .leaf-image {
+    background-image: url("/src/assets/unsplashLeaves.png");
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-size: 500px;
+    transform: scaleX(-1);
+    opacity: 100%;
+  }
+
+  .profile-back-btn {
+    position: absolute;
+    z-index: 5;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+  }
+
+  .profile-picture {
+    margin-left: 29%;
+    margin-top: 9vh;
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile-placeholder {
+    width: 100%;
+    height: 100%;
+  }
+
+  .change-profile-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    height: 22%;
+    width: 110%;
+    margin-left: -8px;
+    margin-top: 10px;
+    font-size: 8px;
+  }
+
+  .left-box {
+    position: absolute;
+    margin-top: 70%;
+    margin-left: 10%;
+    margin-right: 8%;
+    align-self: center;
+    width: 230px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    padding: 10px;
+  }
+
+  .right-box {
+    position: absolute;
+    right: 0;
+    margin-top: 430px;
+    min-width: 50%;
+    height: 32vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+
+  .data-box-left {
+    margin-top: 10%;
+  }
+
+  .data-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 7%;
+  }
+
+  .data-content-address {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 4% 6%;
+  }
+
+  .left-text {
+    margin-top: 2px;
+    font-weight: 650;
+    font-size: 80%;
+  }
+
+  .right-text {
+    margin-top: 2px;
+    font-weight: 500;
+    font-size: 80%;
+  }
+
+  .down-text {
+    font-weight: 500;
+    font-size: 75%;
+    margin-top: -8px;
+    margin-right: 5px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-left: 5vw;
+    margin-top: 5vw;
+  }
+
+  .data-box-right {
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .AccountDetails{
+    font-size: 100%;
+  }
+
+  input, label {
+    display: block;
+  }
+
+  .label {
+    margin-left: 3vw;
+    font-weight: 600;
+    font-size: 80%;
+    margin-bottom: 0.5vh;
+  }
+
+  input[type=text] {
+    margin-left: 1vw;
+    font-size: 0.9em;
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    background-color: #DADADA;
+    height: 4vh;
+  }
+
+  .data-content-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+  }
+
+  .update-profile-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -10px;
+    height: 15%;
+  }
+}
+
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .image-container {
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    background-color: #90B274;
+    position: relative;
+  }
+  
+  .leaf-image {
+    background-image: url("/src/assets/unsplashLeaves.png");
+    width: 100vw;
+    height: 40vh;
+    background-position: center;
+    background-size: 1200px;
+    transform: scaleX(-1);
+    opacity: 100%;
+  }
+  
+  .profile-back-btn {
+    position: absolute;
+    z-index: 5;
+    margin-left: 5vw;
+    margin-top: 6vh;
+    font-size: 200%;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .left-box {
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 2vw;
+    width: 45%;
+    height: 40vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+  
+  .right-box {
+    position: absolute;
+    right: 0;
+    margin-top: 25%;
+    margin-right: 2vw;
+    width: 50%;
+    height: 55vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+  
+  .profile-picture {
+    background-color: #EFEFEF;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 14vw;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid #033324;
+    z-index: 2;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+  }
+  
+  .data-box-left {
+    margin-top: 7vh;
+  }
+  
+  .AccountDetails{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .change-profile-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 220px;
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: -20px;
+  }
+  
+  .data-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4% 6%;
+  }
+  
+  .data-content-address {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 3% 6%;
+  }
+  
+  .left-text {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  
+  .right-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .down-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: -8px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-left: 3vw;
+    margin-top: 2vw;
+  }
+  
+  .data-box-right {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  
+  input, label {
+    display: block;
+  }
+  
+  .label {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+  }
+  
+  input[type=text] {
+    font-size: 1em;
+    width: 100%;
+    padding: 12px 8px;
+    margin-bottom: 4vh;
+    box-sizing: border-box;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    background-color: #DADADA;
+    height: 5vh;
+  }
+  
+  .data-content-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+  }
+  
+  .update-profile-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .phone-number,
+  .moralm-email,
+  .data-content-address,
+  .hr2 {
+    display: none;
+  }
+  .update-profile-btn{
+    margin-top: 30px;
+  }
+}
+
+.phone-number,
+  .moralm-email,
+  .data-content-address,
+  .hr2 {
+    display: none;
+  }
